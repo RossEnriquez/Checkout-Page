@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Checkout Page</title>
+    </head>
+
+    <body>
+        <div id="heading-container">
+            <div id="content"><h1 id="checkout-heading">Checkout</h1></div>
+            <div id="main-container">
+                <div id="first-box">
+                    <h2>Contact Information</h2>
+                    <div>
+                        <form>E-mail</form>
+                        <input type="email" class="input" placeholder="Enter your e-mail...">
+                        <form>Phone</form>
+                        <input type="text" class="input" placeholder="Enter your phone...">
+                    </div>
+                    
+                </div>
+                <div id="second-box">
+                    <h2>Shipping Address</h2>
+                    <div>
+                        <form>Full name</form>
+                        <input type="text" class="input" placeholder="Full name">
+                        <form>Address</form>
+                        <input type="text" class="input" placeholder="Your address">
+                        <form>City</form>
+                        <input type="text" class="input" placeholder="Your city">
+                    </div>
+                    <div id="shipping-pt2">
+                        <div class="box">
+                            <form>Country</form>
+                            <input type="text" class="input half" placeholder="Your country">
+                        </div>
+                        <div class="box"> 
+                            <form>Postal code</form>
+                            <input type="text" class="input half" placeholder="Your postal code">
+                        </div>
+                       
+                    </div>
+                </div>
+                <div id="counter">
+                    <button id="dec">-</button>
+                    <div id="counter-val">value</div>
+                    <button id="inc">+</button>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        form{
+            padding: 5px 0 0 7px;
+        }
+        #main-container{
+            display: block;
+            background-color: blue;
+            width: 57.5vw;
+            margin: 0 auto;
+            padding: 40px;
+        }
+        #heading-container{
+            width: 100vw;
+            height: 100vh;
+            background-color: grey;
+            padding-top: 100px;
+        }
+        #content{
+            background-color: red;
+            padding-left: 400px;
+        }
+        #checkout-heading{
+            font-size: 300%;
+        }
+        .input{
+            width: 40%;
+            height: 35px;
+            border-radius: 10px;
+            margin: 5px;
+        }
+        .half{
+            width: 100%;
+            margin-right: 5px;
+        }
+        #shipping-pt2{
+            display: flex;
+            padding: 0 10px 0 0;
+        }
+        .box{
+            display: block;
+            margin-right: 75px;
+        }
+        
+
+    </style>
+    <script src="scripts.js"></script>
+</html>
