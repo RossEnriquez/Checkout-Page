@@ -154,14 +154,14 @@
     color: grey;
 }
 .input-container{
-    background-color: red;
+    /* background-color: red; */
     position: relative;
 }
-.input{
-    width: 100%;
+#input{
+    min-width: 90%;
     height: 35px;
     border-radius: 10px;
-    padding: 5px 0 5px 10px;
+    padding: 5px 0 5px 50px;
     font-size: 100%;
     border-color: grey;
     border-style: solid;
@@ -169,10 +169,13 @@
 }
 ::placeholder{
     color: rgb(24, 24, 24);
-    text-indent: 35px;
+    /* text-indent: 35px; */
 }
 .half{
-    width: 100%;
+    width: 80%;
+}
+#input-half{
+    width: 80%;
 }
 form{
     margin: 15px 0 5px 0;
@@ -182,11 +185,13 @@ h2{
 }
 #shipping-pt2{
     display: flex;
+    padding: 0 auto;
     /* background-color: white; */
 }
 .box{
     /* background-color: brown; */
     display: block;
+    max-width: 80%;
 }
 #save-info{
     transform: scale(1.25);
