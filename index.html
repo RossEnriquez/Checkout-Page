@@ -2,6 +2,8 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" href="styling.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet">
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,35 +19,55 @@
                         <h2>Contact Information</h2>
                         <div>
                             <form>E-mail</form>
-                            <input type="email" class="input" placeholder="Enter your e-mail...">
+                            <div class="input-container">
+                                <span class="material-icons">mail</span>
+                                <input type="email" class="input" placeholder="Enter your e-mail...">
+                            </div>
                             <form>Phone</form>
-                            <input type="text" class="input" placeholder="Enter your phone...">
+                            <div class="input-container">
+                                <input type="text" class="input" placeholder="Enter your phone...">
+                                <span class="material-icons">phone</span>
+                            </div>
                         </div>
                     </div>
                     <div id="second-box">
                         <h2>Shipping Address</h2>
                         <div>
                             <form>Full name</form>
-                            <input type="text" class="input" placeholder="Full name">
+                            <div class="input-container">
+                                <input type="text" class="input" placeholder="Full name">
+                                <span class="material-icons">account_circle</span>
+                            </div>
                             <form>Address</form>
-                            <input type="text" class="input" placeholder="Your address">
+                            <div class="input-container">
+                                <span class="material-icons">home</span>
+                                <input type="text" class="input" placeholder="Your address">
+                            </div>
                             <form>City</form>
-                            <input type="text" class="input" placeholder="Your city">
+                            <div class="input-container">
+                                <span class="material-icons">location_city</span>
+                                <input type="text" class="input" placeholder="Your city">
+                            </div>
                         </div>
                         <div id="shipping-pt2">
                             <div class="box" style="margin-right: 25%;">
                                 <form>Country</form>
-                                <input type="text" class="input half" placeholder="Your country">
+                                <div class="input-container">
+                                    <span class="material-icons">public</span>
+                                    <input type="text" class="input half" placeholder="Your country">
+                                </div>
                             </div>
                             <div class="box"> 
                                 <form>Postal code</form>
-                                <input type="text" class="input half" placeholder="Your postal code">
+                                <div class="input-container">
+                                    <span class="material-icons">markunread_mailbox</span>
+                                    <input type="text" class="input half" placeholder="Your postal code">
+                                </div>
                             </div>
-                           
                         </div>
                         <div id="bottom-box">
-                            <input type="checkbox">
-                            <label>Save this information for next time</label><br>
+                            <input type="checkbox" id="save-info">
+                            <label style="font-size: 14px;">Save this information for next time</label><br>
                             <p id="cont">
                                 <input type="button" value="Continue" id="btn-cont">
                             </p>
