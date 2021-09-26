@@ -104,12 +104,13 @@
     border-color: grey;
     border-width: 2px;
 }
-.btn-counter{
+.btn{
     width: 20px;
     height: 20px;
     border-radius: 5px;
     margin: auto;
     background-color: lightgray;
+    cursor: pointer;
 }
 .counter-val{
     margin: auto;
@@ -124,6 +125,10 @@
     width: 25%;
     font-weight: bold;
     outline: none;
+    cursor: pointer;
+}
+#btn-cont:hover, #btn-cont:focus{
+    background-color:#ffad65
 }
 #cart-bottom{
     /* background-color: blanchedalmond; */
@@ -157,7 +162,7 @@
     /* background-color: red; */
     position: relative;
 }
-#input{
+.input{
     min-width: 90%;
     height: 35px;
     border-radius: 10px;
@@ -197,5 +202,37 @@ h2{
     transform: scale(1.25);
     margin: auto 5px;
 }
-
-
+.btn-drop{
+    position: absolute;
+    left: 105%;
+    top: 30%;
+}
+.btn:hover, btn:focus{
+    background-color: lightgrey;
+}
+#drop-content{
+    display: none;
+    position: absolute;
+    top: 80%;
+    min-width: 100%;
+    overflow: auto;
+    z-index: 1;
+}
+#drop-content a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 10px 5px;
+    min-width: 176px;
+    border-style: solid;
+    border-color: grey;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-top-width: 0px;
+    border-bottom-width: 1px;
+    background-color: white;
+}
+#drop-content-last{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
